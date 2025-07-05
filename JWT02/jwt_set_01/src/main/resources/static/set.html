@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>发送数据</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; }
+        form { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        input { padding: 8px; margin-right: 10px; }
+        button { padding: 8px 12px; }
+    </style>
+</head>
+<body>
+<h1>项目一 (端口 1234)</h1>
+<h2>输入要通过 JWT 传递的值</h2>
+<form action="/generate-token" method="post">
+    <input type="text" name="data" placeholder="输入任意内容" required>
+    <button type="submit">生成JWT并发送</button>
+</form>
+</body>
+</html>
